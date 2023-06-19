@@ -602,14 +602,15 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 
 .footer-input {
-    max-width: 264px;
+    width: 264px;
     height: 40px;
     border: 1px solid var(--second-text-color);
     border-radius: 4px;
-    margin-right: 24px;
+
     background-color: transparent;
     color: var(--second-text-color);
     padding-left: 16px;

@@ -786,6 +786,10 @@ input {
     margin-bottom: 16px;
 }
 
+.modal-field-checkbox {
+    margin-bottom: 24px;
+}
+
 .modal-textarea {
     display: block;
     width: 100%;

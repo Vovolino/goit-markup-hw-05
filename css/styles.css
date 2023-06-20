@@ -603,6 +603,7 @@ input {
     justify-content: center;
     align-items: center;
     gap: 24px;
+
 }
 
 .footer-input {
@@ -610,7 +611,10 @@ input {
     height: 40px;
     border: 1px solid var(--second-text-color);
     border-radius: 4px;
-
+    font-style: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.004em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: transparent;
     color: var(--second-text-color);
     padding-left: 16px;
@@ -628,18 +632,22 @@ input {
 .footer-btn {
     display: flex;
     flex-direction: row;
-
-    align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
     padding-left: 24px;
-    width: 165px;
+    font-family: inherit;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    min-width: 165px;
     height: 40px;
     background: var(--logo-color);
     border-radius: 4px;
     border: none;
     color: var(--second-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .footer-btn:hover,
@@ -647,15 +655,12 @@ input {
     background-color: var(--hover-color);
 }
 
-.footer-btn-wrap {
-    position: relative;
-}
-
 .footer-btn-icon {
     position: absolute;
-    right: 24px;
+    left: 117px;
     top: 50%;
     transform: translateY(-50%);
+    margin-right: 24px;
 }
 
 .backdrop {
@@ -735,6 +740,7 @@ input {
     padding-left: 38px;
     color: var(--title-color);
     outline: transparent;
+    background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -752,7 +758,7 @@ input {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--light-slate-color);
-    display: inline-block;
+    display: block;
     margin-bottom: 4px;
 }
 
@@ -771,7 +777,7 @@ input {
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .modal-textarea {
@@ -780,14 +786,14 @@ input {
     height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--title-color);
+    color: rgba(46, 47, 66, 0.4);
     resize: none;
     outline: transparent;
+    background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -812,22 +818,25 @@ input {
     text-decoration: underline;
 }
 
-.check-text span {
+.icon-checkbox {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-check:checked+.check-text span {
-    background-color: var(--logo-color);
+    background-color: var(--hover-color);
     border: none;
-    fill: var(--second-text-color);
+    fill: var(--button-color);
 }
 
 .modal-btn {

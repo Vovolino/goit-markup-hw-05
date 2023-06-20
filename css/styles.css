@@ -819,7 +819,7 @@ input {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--light-slate-color);
-    display: flex;
+
     align-items: center;
 }
 
